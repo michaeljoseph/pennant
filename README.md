@@ -15,8 +15,6 @@
 - Always prefer single quotes, unless it's inconvenient (no one likes escaping).
   Also, [because the internet][]
 
-- String interpolation happens a lot, this is my pattern:
-
 ```python
 infuriating = {
     'ugh': "Is if you switch between them",
@@ -24,18 +22,16 @@ infuriating = {
 }
 initialise(' "%s" ' % infuriating)
 
-title = "Double quotes are ok I guess. If there's gonna be apostrophes and stuff."
+pragmatic = "Double quotes are ok I guess. If there's gonna be apos'trophes and stuff."
 
-good = 'Single quotes and syntax highlighting are sufficient'
-
-pragmatic = "Double quotes are ok I guess. If there's gonna be apostrophes and stuff."
+good = 'Single quotes and syntax highlighting are sufficient usually and less typing'
 
 import requests
-
 print(requests.get('http://stackoverflow.com/a/56190/5549').content)
-
-import this
 ```
+
+- String interpolation
+
 
 ### Absolute imports
 
@@ -48,7 +44,7 @@ import this
 
 ### Tools
 
-- use [clici][]
+- [clici]
 
 [PEP 8]:http://hg.python.org/peps/file/tip/pep-0008.txt
 [PEP 20]:http://legacy.python.org/dev/peps/pep-0020/
